@@ -1,0 +1,2 @@
+C:/Users/DELL/StudioProjects/skinsense1/android/app/.cxx/Debug/3zy4h4l5/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/DELL/StudioProjects/skinsense1/android/app/.cxx/Debug/3zy4h4l5/x86_64/CMakeFiles/rebuild_cache.dir

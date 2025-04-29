@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "371413294217",
+    "project_id": "skinsense-58629",
+    "storage_bucket": "skinsense-58629.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371413294217:android:504747ab256160a0d6ba58",
+        "android_client_info": {
+          "package_name": "com.example.proj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371413294217-46v5kgt2jgnlbn19chutv2rtp5nqmvm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc0KMcJ5q3hFLp-nHZAiqvWOjTFSN3ceY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371413294217-46v5kgt2jgnlbn19chutv2rtp5nqmvm5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "371413294217-2oaic4c60euj7sa0gcsu4h0iq96lu3qp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.skinsense"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371413294217:android:0055b97b6f0d18fbd6ba58",
+        "android_client_info": {
+          "package_name": "com.example.skinsense1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371413294217-46v5kgt2jgnlbn19chutv2rtp5nqmvm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc0KMcJ5q3hFLp-nHZAiqvWOjTFSN3ceY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371413294217-46v5kgt2jgnlbn19chutv2rtp5nqmvm5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "371413294217-2oaic4c60euj7sa0gcsu4h0iq96lu3qp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.skinsense"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
