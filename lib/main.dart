@@ -1,9 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:skinsense1/chatscreen.dart';
 import 'package:skinsense1/firebase_options.dart';
 import 'package:skinsense1/survey.dart';
 import 'package:skinsense1/welcomescreen.dart';
-
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,7 +16,6 @@ void main() async {
   runApp(MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -26,9 +25,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: WelcomeScreen(),
       routes: {
-        '/next': (context) => SurveyScreen(),
-      },
+        '/next': (context) => SurveyScreen (),
+        '/chat': (context) => GeminiChatScreen(),
 
+
+      },
     );
   }
 }

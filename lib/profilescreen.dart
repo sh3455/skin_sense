@@ -77,10 +77,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFF8E1E7),
       appBar: AppBar(
-        title: Text('My Profile'),
-        backgroundColor: Colors.transparent,
+        title: Text('My Profile', style: TextStyle(color: Colors.black)),
+        backgroundColor: Colors.white,
         elevation: 0,
+        iconTheme: IconThemeData(color: Colors.black),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -89,21 +91,37 @@ class _ProfileScreenState extends State<ProfileScreen> {
             end: Alignment.bottomRight,
             colors: [
               Colors.pink[50]!,
-              Colors.pink[100]!,
+            Color(0xFFF8E1E7)!,
             ],
           ),
         ),
         child: isLoading
             ? Center(child: CircularProgressIndicator())
             : answers.isEmpty
-            ? Center(child: Text('No answers found.', style: TextStyle(fontSize: 18)))
-            : ListView.builder(
+            ? Center(
+          child: Text(
+            'No answers found.',
+            style: TextStyle(fontSize: 18, color: Colors.pink[900]),
+          ),
+        )
+            : ListView.separated(
           padding: EdgeInsets.all(16.0),
           itemCount: answers.length,
+          separatorBuilder: (_, __) => SizedBox(height: 12),
           itemBuilder: (context, index) {
             final answer = answers[index];
-            return Card(
-              margin: EdgeInsets.symmetric(vertical: 8.0),
+            return Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(16),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.pink.withOpacity(0.1),
+                    blurRadius: 10,
+                    offset: Offset(0, 4),
+                  ),
+                ],
+              ),
               child: Padding(
                 padding: EdgeInsets.all(16.0),
                 child: Column(
@@ -117,7 +135,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         color: Colors.black87,
                       ),
                     ),
-                    SizedBox(height: 8),
+                    SizedBox(height: 10),
                     Text(
                       answer['answer']!,
                       style: TextStyle(

@@ -45,8 +45,9 @@ class ArticlesScreen extends StatelessWidget {
           "Articles",
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
-        backgroundColor: Colors.pink[100],
+        backgroundColor: Colors.white,
       ),
+      backgroundColor:Color(0xFFF8E1E7), // Added this line to set the background to PINK[100]
       body: ListView.builder(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         itemCount: articles.length,

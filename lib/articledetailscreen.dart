@@ -12,15 +12,16 @@ class ArticleDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(article.title),
-        backgroundColor: Colors.pink[100],
+        backgroundColor: Colors.white,
       ),
+      backgroundColor: Color(0xFFF8E1E7), // Added this line to set the background to PINK[100]
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CachedNetworkImage(
               imageUrl: article.imageUrl,
-              height: 200,
+              height: 450,
               width: double.infinity,
               fit: BoxFit.cover,
               placeholder: (context, url) => Center(child: CircularProgressIndicator()),

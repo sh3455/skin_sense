@@ -181,7 +181,7 @@ class _SurveyScreenState extends State<SurveyScreen> {
             end: Alignment.bottomRight,
             colors: [
               Colors.pink[50]!,
-              Colors.pink[100]!,
+              Color(0xFFF8E1E7)!,
             ],
           ),
         ),
